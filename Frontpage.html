@@ -12,25 +12,34 @@
   <body>
     <header>
       
-        <img src="LogoMakr-7ZtIX2.png" alt="logo" href="Frontpage.html" style="max-width: 150px; max-height: 150px;">
+        <img src="LogoMakr-7ZtIX2.png" alt="logo" href="Frontpage.html" style="max-width: 250px; max-height: 250px;">
       
       
       <nav>
         <ul>
-          <li><a href="Frontpage.html">Home</a></li>
-          <li><a href="About.html">About Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="Frontpage.html"style="color:#2a71c5;" >Home</a></li>
+          <li><a href="About.html"style="color: black;">About Us</a></li>
+          <li><a href="contact.html"style="color: black;">Contact</a></li>
+          <li class="dropdown" id="down">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: black;">Language</a>
+            <ul class="dropdown-menu">
+              <li><a href="#"style="color: #5b5b5b;">English</a></li>
+              <li><a href="esFrontpage.html"style="color: #5b5b5b;">Spanish</a></li>
+              <li><a href="deFrontpage.html"style="color: #5b5b5b;">German</a></li>
+            </ul>
+          </li>
           
         </ul>
       </nav>
     </header>
     <main>
-      <h2>Create Custom Job Applications in Minutes</h2>
+      <h2>Create a Unique Job Application with a few Clicks</h2>
       <p>Enter your personal information and the job details below:</p>
       <form>
         <fieldset>
 
           <legend>Personal Information</legend>
+          <p></p>
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required>
           <label for="age">Age:</label>
@@ -42,14 +51,16 @@
 
         <fieldset>
           <legend>Educational Background</legend>
-          <label for="degree">Degree:</label>
+          <p></p>
+          <label for="degree">Degree and Name of the Institution:</label>
           <input type="text" id="degree" name="degree" required>
-          <label for="uniName">Name of the Institution:</label>
-          <input type="text" id="uniName" name="uniName" required>
+          <label for="extra">Second Degree or other Qualifications</label>
+          <input type="text" id="extra" name="extra" optional>
          
         </fieldset>
         <fieldset>
         <legend>CV</legend>
+        <p></p>
         <label for="experience">Work Experience:</label>
         <textarea id="experience" name="experience" rows="5" required></textarea>
         <label for="internships">Internships:</label>
@@ -63,27 +74,40 @@
 
         <fieldset>
           <legend>Job Details</legend>
+          <p></p>
           <label for="company">Company Name:</label>
           <input type="text" id="company" name="company" required>
           <label for="position">Position:</label>
           <input type="text" id="position" name="position" required>
           <label for="requirements">Requirements:</label>
           <textarea id="requirements" name="requirements" rows="5" required></textarea>
+          <label for="more">More detailed Job description (optional):</label>
+          <textarea id="more" name="more" rows="2"></textarea>
         </fieldset>
         <button id="generate-btn" type="submit">Generate Application</button>
 
       </form>
       <div id="result">
+        <p></p>
         <h2> Generated Application: </h2>
         <textarea id="application-text" rows="10"></textarea>
       </div>
       
+      <script src="skript.js"></script>
       
-
     </main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>HAMZA HALLO GUCK MAL HIER IST DIE EXTRA SEITE</p>
+      <p>HAMZA HALLO GUCK MAL HIER IST DIE EXTRA SEITE</p>
+      <p>HAMZA HALLO GUCK MAL HIER IST DIE EXTRA SEITE</p>
+      <p>HAMZA HALLO GUCK MAL HIER IST DIE EXTRA SEITE</p>
+      <p>HAMZA HALLO GUCK MAL HIER IST DIE EXTRA SEITE</p>
+    </section>
+    
+
     <footer>
-     
-      <p>&copy; 2023 JopApplication AI. All rights reserved.</p>
+      <p> 2023 JopApplication AI. All rights reserved.</p>
     </footer>
   </body>
 </html>

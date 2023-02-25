@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta name="author" content="Mier Barsanjy">
+    <title>Bewerbungs Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
+
+  </head>
+  <body>
+    <header>
+      
+        <img src="LogoMakr-7ZtIX2.png" alt="logo" href="Frontpage.html" style="max-width: 250px; max-height: 250px;">
+      
+      
+        <nav>
+            <ul>
+              <li><a href="deFrontpage.html"style="color:#2a71c5;" >Startseite</a></li>
+          <li><a href="About.html"style="color: black;">Über uns</a></li>
+          <li><a href="contact.html"style="color: black;">Kontakt</a></li>
+          <li class="dropdown" id="down">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: black;">Sprache</a>
+            <ul class="dropdown-menu">
+              <li><a href="Frontpage.html"style="color: #5b5b5b;">Englisch</a></li>
+              <li><a href="esFrontpage.html"style="color: #5b5b5b;">Spanisch</a></li>
+              <li><a href=""style="color: #5b5b5b;">Deutsch</a></li>
+            </ul>
+          </li>
+              
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <h2>Erstellen Sie individuelle Bewerbungen mit wenigen Klicks</h2>
+          <p>Geben Sie unten Ihre persönlichen Daten und Jobdetails ein:</p>
+          <form>
+            <fieldset>
+        
+              <legend>Persönliche Informationen</legend>
+              <p></p>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              <label for="age">Alter:</label>
+              <input type="number" id="age" name="age" required>
+              <label for ="Gender">Geschlecht: </label>
+              <input type="text" id="gender" name="Gender" required>
+        
+            </fieldset>
+        
+            <fieldset>
+              <legend>Ausbildungshintergrund</legend>
+              <p></p>
+              <label for="degree">Abschluss:</label>
+              <input type="text" id="degree" name="degree" required>
+              <label for="uniName">Name der Institution:</label>
+              <input type="text" id="uniName" name="uniName" required>
+             
+            </fieldset>
+            <fieldset>
+            <legend>Lebenslauf</legend>
+            <p></p>
+            <label for="experience">Berufserfahrung:</label>
+            <textarea id="experience" name="experience" rows="5" required></textarea>
+            <label for="internships">Praktika:</label>
+            <textarea id="internships" name="internships" rows="5" required></textarea>
+            <label for="skills">Fähigkeiten:</label>
+            <textarea id="skills" name="skills" rows="5" required></textarea>
+            
+            
+        
+            </fieldset>
+        
+            <fieldset>
+              <legend>Jobdetails</legend>
+              <p></p>
+              <label for="company">Name des Unternehmens:</label>
+              <input type="text" id="company" name="company" required>
+              <label for="position">Position:</label>
+              <input type="text" id="position" name="position" required>
+              <label for="requirements">Anforderungen:</label>
+              <textarea id="requirements" name="requirements" rows="5" required></textarea>
+        </fieldset>
+        <button id="generate-btn" type="submit">Berwerbung erstellen</button>
+
+      </form>
+      <div id="result">
+        <p></p>
+        <h2> Generierte Bewerbung: </h2>
+        <textarea id="application-text" rows="10"></textarea>
+      </div>
+      
+      <script src="skriptDe.js"></script>
+
+    </main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>HAMZA HALLO GUCK MAL HIER IST DIE EXTRA SEITE</p>
+      <p>HAMZA HALLO GUCK MAL HIER IST DIE EXTRA SEITE</p>
+      <p>HAMZA HALLO GUCK MAL HIER IST DIE EXTRA SEITE</p>
+      <p>HAMZA HALLO GUCK MAL HIER IST DIE EXTRA SEITE</p>
+      <p>HAMZA HALLO GUCK MAL HIER IST DIE EXTRA SEITE</p>
+    </section>
+    <footer>
+     
+      <p>&copy; 2023 JopApplication AI. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
