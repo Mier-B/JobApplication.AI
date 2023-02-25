@@ -171,44 +171,34 @@ body {
   
   #about {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     background-color: #f8f8f8;
     padding: 50px;
+    align-items: center;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
   }
   
   .about-text {
     flex: 1;
-    padding-right: 50px;
-  }
-  
-  .about-images {
-    display: flex;
-    align-items: center;
+    text-align: center;
+    padding-left: 50px;
   }
   
   .logo {
     max-width: 200px;
     max-height: 200px;
-    margin-right: 50px;
-  }
-  
-  .text-left {
-    margin-bottom: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: left;
-  }
-  
-  .text-right {
-    margin-bottom: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: right;
+    margin-right: 20px;
+    margin-left: 20px;
   }
   
   p {
-    margin: 0 0 10px;
+    margin: 0;
     font-size: 18px;
     line-height: 1.5;
   }
@@ -216,6 +206,7 @@ body {
   h2 {
     margin-bottom: 20px;
     font-size: 28px;
+    text-align:center;
   }
   
   /* new CSS rules */
@@ -227,13 +218,8 @@ body {
     margin-bottom: 0;
   }
   
-  .logo:last-child {
-    margin-right: 0;
-  }
-  
   .logo:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
   }
-  
   
