@@ -1,14 +1,14 @@
 body {
     font-family: Arial;
-    background-color: #f7f7f7;
+    background-color: #e2e2e2;
     color: #333;
     margin: 0;
     padding: 0;
   }
   
   header {
-    background-color: #f2ecec;
-    color: #60b0f4;
+    background-color: #ffffff;
+    color: #256dac;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -87,7 +87,7 @@ body {
   }
   
   button[type="submit"] {
-    background-color: #60b0f4;
+    background-color: #4191d8;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -146,5 +146,39 @@ body {
   
   .title {
     margin-left: 20px;
+  }
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .dropdown.show .dropdown-menu {
+    display: block;
+    margin-bottom: 20px;
+    background-color: #ebe8e8;
+    border: 1px solid #000000;
+  }
+  .dropdown-menu li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #about {
+    background-color: #f9f9f9;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  #about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #about p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: justify;
+    text-align: center;
   }
   
