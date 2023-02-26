@@ -48,7 +48,7 @@ async function generateApplication(event) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${'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'}`
+        'Authorization': `Bearer ${''}`
       },
       body: JSON.stringify({
         prompt: prompt,
