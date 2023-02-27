@@ -1,4 +1,6 @@
 # JobApplication.AI
 AI generated Applications by Mier Barsanjy
 
-Using Davinci-003 from OpenAI this Site will generate you applications for your desired job based on your information.
+Using Davinci-003 from OpenAI this Site will generate applications for a job based on given information.
+Test project to test Application.
+Currently only running Client-Sided. Officel Release once Server is setup
