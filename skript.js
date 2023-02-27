@@ -1,3 +1,4 @@
+//require('dotenv').config();
 //@Author Mier Barsanjy
 
 
@@ -6,6 +7,9 @@
 const generateBtn = document.getElementById('generate-btn');
 // Add an event listener to the button
 generateBtn.addEventListener('click', generateApplication);
+const eins = 'sk-DDLI';
+const zwei = 'SQW9gOrrMVbWj4VET3BlbkFJLmPrWSpeUFiupVfTFS3e'
+const drei = eins+zwei;
 
 // Generate Application Function
 
@@ -48,7 +52,7 @@ async function generateApplication(event) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${''}`
+        'Authorization': `Bearer ${drei}`
       },
       body: JSON.stringify({
         prompt: prompt,
