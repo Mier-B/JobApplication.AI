@@ -15,21 +15,27 @@ body {
     align-items: center;
   }
   
+  
+  
   nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
+    margin-right: 80px; 
+    
   }
   
   nav li {
     margin: 0 10px;
+    margin-right: 10px; 
   }
   
   nav a {
     color: #60b0f4;
     text-decoration: none;
     font-weight: bold;
+    
   }
   
   nav a:hover {
@@ -88,7 +94,7 @@ body {
   
   textarea {
     resize: vertical;
-   font-family:  Calibri 
+   font-family:  Arial 
   }
   
   button[type="submit"] {
