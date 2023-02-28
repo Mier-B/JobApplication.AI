@@ -28,6 +28,13 @@ dropdown.addEventListener('click', function(event) {
 
 async function generateApplication(event) {
     event.preventDefault();
+    generateBtn.disabled=true;
+    generateBtn.textContent="Please wait a moment";
+    setTimeout(function() {
+      generateBtn.disabled = false;
+      generateBtn.textContent = "Generate Application";
+    }, 15000);
+  
     
     // Collect form data
     const name = document.getElementById('name').value;
@@ -63,6 +70,8 @@ async function generateApplication(event) {
         model: "text-davinci-003",  
       })
     });
+
+
 //const response =problemlösung(prompt);
     console.log(response);
 

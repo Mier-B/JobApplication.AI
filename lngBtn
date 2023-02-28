@@ -1,0 +1,12 @@
+const dropdown = document.getElementById('down')       //document.querySelector('.dropdown');
+  
+dropdown.addEventListener('click', function(event) {
+    event.stopPropagation();
+    dropdown.classList.toggle('show');
+  });
+  
+  document.addEventListener('click', function(event) {
+    if (!dropdown.contains(event.target)) {
+      dropdown.classList.remove('show');
+    }
+  });
