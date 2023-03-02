@@ -41,32 +41,32 @@
               <legend>Persönliche Informationen</legend>
               <p></p>
               <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required>
+              <input type="text" placeholder="Max Mustermann" id="name" name="name" required>
               <label for="age">Alter:</label>
-              <input type="number" id="age" name="age" required>
+              <input type="number" placeholder="25" id="age" name="age" required>
               <label for ="Gender">Geschlecht: </label>
-              <input type="text" id="gender" name="Gender" required>
+              <input type="text" id="gender" placeholder="Männlich" name="Gender" required>
         
             </fieldset>
         
             <fieldset>
               <legend>Ausbildungshintergrund</legend>
               <p></p>
-              <label for="degree">Abschluss:</label>
-              <input type="text" id="degree" name="degree" required>
-              <label for="uniName">Name der Institution:</label>
-              <input type="text" id="uniName" name="uniName" required>
+              <label for="degree" >Abschluss und Name der Institution:</label>
+              <input type="text" placeholder="Informatik an der TUM" id="degree" name="degree" required>
+              <label for="extra">Zweit Abschluss oder sonstige Qualifikationenn (Optional)</label>
+              <input type="text" placeholder="Maschinenbau  an der BHT" id="extra" name="extra">
              
             </fieldset>
             <fieldset>
             <legend>Lebenslauf</legend>
             <p></p>
             <label for="experience">Berufserfahrung:</label>
-            <textarea id="experience" name="experience" rows="5" required></textarea>
+            <textarea id="experience" name="experience" placeholder="Werkstudent bei Siemens" rows="5" required></textarea>
             <label for="internships">Praktika:</label>
-            <textarea id="internships" name="internships" rows="5" required></textarea>
+            <textarea id="internships" name="internships" rows="5"  placeholder="6 wöchiges Praktium bei Tesla" required></textarea>
             <label for="skills">Fähigkeiten:</label>
-            <textarea id="skills" name="skills" rows="5" required></textarea>
+            <textarea id="skills" name="skills" placeholder="Java, Python, Englisch C1, Spanisch" rows="5" required></textarea>
             
             
         
@@ -76,11 +76,13 @@
               <legend>Jobdetails</legend>
               <p></p>
               <label for="company">Name des Unternehmens:</label>
-              <input type="text" id="company" name="company" required>
+              <input type="text" id="company" name="company" placeholder="Netflix" required>
               <label for="position">Position:</label>
-              <input type="text" id="position" name="position" required>
+              <input type="text" id="position" name="position" placeholder="Software Entwickler" required>
               <label for="requirements">Anforderungen:</label>
-              <textarea id="requirements" name="requirements" rows="5" required></textarea>
+              <textarea id="requirements" name="requirements" placeholder="Erfahrung und Kentnisse in der Webentwicklung" rows="5" required></textarea>
+              <label for="more">Detailiertere Jobbeschreibung (Optional):</label>
+              <textarea id="more" placeholder="Verantwortlich für die Instandhaltung und Pflege der Website"name="more" rows="2"></textarea>
         </fieldset>
         <button id="generate-btn" type="submit">Berwerbung erstellen</button>
 
