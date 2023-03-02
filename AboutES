@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="author" content="Mier Barsanjy">
+	<title>About Us</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+      
+        <img src="LogoMakr-0Q4QI7-300dpi.png" alt="logo" href="Frontpage.html" style="max-width: 250px; max-height: 250px; ">
+      
+      
+      <nav>
+        <ul>
+          <li><a href="esFrontpage.html"style="color:#2a71c5;">Inicio</a></li>
+          <li><a href="AboutES"style="color: black;">Acerca de Nosotros</a></li>
+          <li><a href="contact.html"style="color: black;">Contacto</a></li>
+          
+        </ul>
+      </nav>
+    </header>	
+
+	<main>
+		<p>Presentamos nuestro revolucionario sitio web de redacción de solicitudes de trabajo que utiliza tecnología de inteligencia artificial de vanguardia para crear solicitudes de trabajo únicas y personalizadas adaptadas específicamente a sus habilidades y experiencia. ¿Y la mejor parte? ¡Es completamente gratis!</p>
+	
+<p>Con nuestra plataforma intuitiva disponible en alemán, inglés y español, puede crear fácilmente solicitudes de trabajo que lo diferencian de la competencia. Nuestro sistema de IA genera contenido personalizado que destaca sus fortalezas y logros, lo que lo hace destacar ante posibles empleadores.</p>
+
+<p>Nuestro sitio web está diseñado teniendo en cuenta la facilidad de uso, lo que hace que sea sencillo para cualquier persona crear solicitudes de trabajo de calidad profesional con solo unos pocos clics. Diga adiós al estrés y las molestias de crear solicitudes de trabajo y deje que nuestra plataforma impulsada por IA haga el trabajo por usted. Únase a nosotros hoy y dé el primer paso para obtener su trabajo soñado.</p>
+<img src="pexels-sora-shimazaki-5668859-28.jpg" class="logo">
+	</main>
+	<script src="lngBtn"></script>
+
+	<footer>
+		<p>&copy; 2023 JopApplication AI. All rights reserved.</p>
+	</footer>
+
+</body>
+</html>
