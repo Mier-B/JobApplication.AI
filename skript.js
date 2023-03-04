@@ -1,8 +1,10 @@
-import { call } from "./backend";
+
 //@Author Mier Barsanjy
 
 
-
+const eins = 'sk-vTNOEnOdtSba1UXGxS3CT';
+const zwei = '3BlbkFJ5NslI6RD0I4C9z1reNdk'
+const drei = eins+zwei;  
 
 
 // Get the "Generate Application" button element
@@ -54,7 +56,21 @@ async function generateApplication(event) {
     const prompt = `Act as if you were me. Write me an profesional and long application to ${company}. Write it as if it was an E-mail. Start the text with Dear and then the name of the Company. I want to apply for the Position of a ${position}  The Requirement for the job are ${requirements} .  My name is  ${name} I am ${age} years old and finsihed my Degree in ${degree}. I also have the following qualifications: ${extra}.I have the following experience ${experience} and did the following internships ${internships}. I also have the following skills: ${skills}.
     Try to use all those information in the Application. Make the Application very interesesting. This is the adnvanced jobdescription: ${more}.  Ende`;
     
-  respone= call(prompt);
+    const response = await fetch('https://api.openai.com/v1/completions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${drei}`
+      },
+      body: JSON.stringify({
+        prompt: prompt,
+        temperature: 1,
+        max_tokens: 1105,
+        n: 1,
+        stop: ["Ende"],
+        model: "text-davinci-003",  
+      })
+    });
 
 
 //const response =problemlösung(prompt);
